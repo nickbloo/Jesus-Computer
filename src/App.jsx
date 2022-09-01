@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { api_key } from '../config.js';
 import { books, chapters } from './bibleData.js';
+import { getCookie, setCookie } from "./cookieHelpers.js";
 
 const VERSES = [
   `JER.29.11`,
@@ -40,14 +41,26 @@ function randomNum (x) {
 }
 
 export default function App() {
-  const [verse, setVerse] = useState("other verse");
+  const [verse, setVerse] = useState(getCookie("verse"));
   const [verseId, setVerseId] = useState(null);
-  // const [loaded, setLoaded] = useState(false);
   //Get a database of bible verses
 
   useEffect(() => {
-    console.log("Stream Bladee");
-    getVerseList();
+    const lastDate = getCookie("date");
+    const todayDate = new Date();
+    const todayString = todayDate.toLocaleDateString();
+    console.log("cookies: ", document.cookie);
+    if (lastDate !== todayString) {
+      getVerseList();
+    } else {
+      const oldVerse = getCookie("verse");
+      if (oldVerse.length > 1) {
+        setVerse(oldVerse);
+      } else {
+        getVerseList();
+      }
+    }
+    setCookie("date", todayString);
   }, []);
 
   useEffect(() => {
@@ -55,6 +68,12 @@ export default function App() {
       getVerse();
     }
   }, [verseId]);
+
+  useEffect(() => {
+    if (verse && verse.length > 1) {
+      setCookie("verse", verse);
+    }
+  }, [verse]);
 
   function getVerseList () {
     console.log("Get a new verse");
