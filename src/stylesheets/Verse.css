@@ -1,5 +1,6 @@
 .verse-container {
+  width: 70vw;
 }
 .verse {
-  font-size: 40px;
+  font-size: 25px;
 }
