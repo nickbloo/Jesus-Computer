@@ -55,7 +55,7 @@ table {
 	height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 	background-color: #b4e1f6;
 	overflow: hidden;
@@ -99,34 +99,49 @@ html, body, #root {
 	min-width: 500px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 600px) {
 	.verse {
 		font-size: 20px;
 	}
+
 }
 
 .verse-container {
   max-width: 55vw;
 	min-width: 600px;
+	height: 600px;
 	z-index: 2;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	top: 10vh;
 }
 .verse {
-	width: 40vw;
+	max-width: 40vw;
+	min-width: 400px;
 	max-height: 150px;
 	font-size: 25px;
 	text-align: center;
 	float: none;
-	position: absolute;
-	font-style: Futura, sans-serif;
+	position: relative;
+	top: 10vh;
+	/* font-style: Futura, sans-serif; */
 }
 
 #scroll {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-	width: 100%;
+	position: absolute;
+	max-width: 55vw;
+	min-width: 600px;
 	object-fit: cover;
+}
+#navbar {
+	top: 0;
+	height: 100px;
+	background-color: white;
+	z-index: 3;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }

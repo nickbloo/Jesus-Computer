@@ -134,3 +134,61 @@ export const chapters = [
   1,
   22
 ];
+
+export const deedData = [
+  "Call a parent/grandparent today",
+  "Help someone with their bags at the grocery store",
+  "Write a card to someone important to you",
+  "Go for a walk in a park",
+  "Ask someone if they need any help",
+  "Make a meal for someone",
+  "Share something that makes you happy with someone",
+  "Pay for the person behind you in line at the store",
+  "Make a playlist for someone",
+  "Offer to mow your neighbors lawn",
+  "Let someone go in front of you in line",
+  "Don’t complain",
+  "Be calm in traffic",
+  "Pray deeply and intimately",
+  "Pray for someone else",
+  "Recall something someone did for you and thank them for it",
+  "Think before you speak in anger",
+  "Admire the beauty of God’s creation",
+  "Give something of yours away",
+  "Show kindness to someone who doesn’t deserve it",
+  "Give thanks before you eat",
+  "Don’t be wasteful",
+  "Think about how you are blessed, smile and thank God",
+  "Go to church",
+  "Visit a friend",
+  "Feel the warmth of the sun that God created on your face",
+  "Dedicate yourself to peace throughout the day",
+  "Share a Bible passage with a friend"
+];
+
+export const prayerData = [
+  "Our Father which art in heaven, Hallowed be thy name. Thy kingdom come, Thy will be done in earth, as it is in heaven. Give us this day our daily bread. And forgive us our debts, as we forgive our debtors. And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen",
+  "Now I lay me down to sleep, I pray the Lord my soul to keep. If I should die before I wake, I pray the Lord my soul to take. Amen",
+  "For God’s not given me a spirit of fear, But a spirit of love, and of power, and a sound mind, To live each day and glorify his name. Amen",
+  "Lord, make me an instrument of your peace: where there is hatred, let me sow love; where there is injury, pardon; where there is doubt, faith; where there is despair, hope; where there is darkness, light; where there is sadness, joy. O divine Master, grant that I may not so much seek to be consoled as to console, to be understood as to understand, to be loved as to love. For it is in giving that we receive, it is in pardoning that we are pardoned, and it is in dying that we are born to eternal life. Amen",
+  "Bless us, Oh Lord, and these thy gifts which we are about to receive from thy bounty, through Christ, Our Lord. Amen",
+  "My God, I am sorry for my sins with all my heart. In choosing to do wrong and failing to do good, I have sinned against you whom I should love above all things. I firmly intend, with your help, to do penance, to sin no more, and to avoid whatever leads me to sin. Our Savior Jesus Christ suffered and died for us. In his name, my God, have mercy. Amen",
+  "In the name of our Lord Jesus Christ I will begin this day. I thank you, Lord, for having preserved me during the night. I will do my best to make all I do today pleasing to You and in accordance with Your will. Amen",
+  "Breathe into me, Holy Spirit, that my thoughts may all be holy. Move in me, Holy Spirit, that my work, too, may be holy. Attract my heart, Holy Spirit, that I may love only what is holy. Strengthen me, Holy Spirit, that I may defend all that is holy. Protect me, Holy Spirit, that I may always be holy. Amen",
+  "God our Father, Your power brings us to birth, Your providence guides our lives, and by Your command we return to dust. Lord, those who die still live in Your presence, their lives change but do not end. I pray in hope for my family, relatives and friends, and for all the dead known to You alone. In company with Christ, Who died and now lives, may they rejoice in Your kingdom, where all our tears are wiped away. Unite us together again in one family, to sing Your praise forever and ever. Amen",
+  "Dear Lord, I offer you this prayer, to help me with my current relationship situation. Please take away all the pain and hurt in my heart. Fill it with love, joy, patience, and understanding. Bless me and my partner, so that we may never surrender to whatever challenges that come our way. Fill our hearts with love for each other, and may you make each one of us realize each other's worth. I seek for your mercy and blessings in Jesus’ name. Amen",
+  "Glory be to the Father and to the Son and to the Holy Spirit. As it was in the beginning is now, and ever shall be, world without end. Amen",
+  "You expired, O Jesus, but the source of life gushed forth for souls and an ocean of mercy opened up for the whole world. O Fountain of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of mercy for us, I trust only in You. Amen",
+  "Lord, You invite all who are burdened to come to you. Allow Your healing Hand to heal me. Touch my soul with Your compassion for others; touch my heart with Your courage and infinite Love for all; touch my mind with Your Wisdom, and may my mouth always proclaim Your praise. Teach me to reach out to You in all my needs, and help me to lead others to You by my example. Most loving Heart of Jesus, bring me health in body and spirit that I may serve You with all my strength. Touch gently this life which you have created, now and forever. Amen",
+  "Lord, Help me harness my heart and life to Jesus each day, for his yoke is easy, His burden is light, and in Him there is rest for my soul. Amen",
+  "Glory to God in the highest. And on earth peace to men of good will. We praise You. We bless You. We adore you. We glorify You. We give You thanks for Your great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the Only-begotten Son. O Lord God, Lamb of God, Son of the Father: you Who take away the sins of the world, have mercy on us. You Who take away the sins of the world, receive our prayer. You Who sit at the right hand of the Father, have mercy on us. For you alone are holy. You alone are the Lord. You alone, O Jesus Christ, are most high. Together with the Holy Spirit in the glory of God the Father. Amen",
+  "Lord in heaven hear my prayer, Keep me in your loving care. Be my guide in all I do, And lead all souls on earth to You. Amen",
+  "Dear Lord Jesus, I know that I am a sinner, and I ask for Your forgiveness. I believe You died for my sins and rose from the dead. I turn from my sins and invite You to come into my heart and life. I want to trust and follow You as my Lord and Savior. In Your Name. Amen",
+  "Lord, Thank you for my beautiful family. Please watch over my family today. Send an angel to guide them  safely and avoid any harm they may face. Amen",
+  "Father, grant Mercy to all souls that turned away from You. Open their hearts and minds with Your light. Gather Your children from the four corners of the earth. Bring them out of darkness into Your light. You are our saving God Who leads us in our salvation. Jesus, our Savior, you are the hope of all the Earth. May You be known among all nations and fill all men with Your love. Amen",
+  "Lord defend us in battle. Be our protection against the wickedness and snares of the devil; May You rebuke him, we humbly pray; And do thou, O Heavenly Father, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen",
+  "Father of all, we pray to you for (name of the deceased), and for all those whom we love but see no longer. Grant to them eternal rest. Let light perpetual shine upon them. May their soul and the souls of all the faithful departed, through the mercy of God, rest in peace. Amen",
+  "Dear Jesus, Divine Physician and Healer of the sick, we turn to you in times of illness. O dearest comforter of the troubled, alleviate our worry and sorrow with your gentle love, and grant us the grace and strength to accept our burdens. Amen",
+  "Jesus please, put your arms around the poor so they may feel comfort and hope; meet their needs and be their fountain of abundance. Lord, guide me so I can be your hands and feet pursuing justice in all things I do. Amen"
+];
+
