@@ -4,7 +4,8 @@ export default function Verse ({verse}) {
 
   return (
     <div className="verse-container">
+      <img id="scroll" src='/src/assets/scroll.png' />
       <h2 className="verse">{verse}</h2>
-      </div>
+    </div>
   )
 }

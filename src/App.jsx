@@ -1,4 +1,3 @@
-import './App.css'
 import Verse from "./components/Verse.jsx";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -79,6 +78,8 @@ export default function App() {
 
   return (
     <div className="App">
+      <img id='clouds' src='/src/assets/cloudbackground.png' />
+      <img id='hearts' src='/src/assets/hearts.png' />
       <Verse verse={verse} />
     </div>
   )

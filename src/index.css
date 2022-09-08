@@ -49,15 +49,84 @@ table {
 
 /* END OF CSS RESET */
 
+
+.App {
+  width: 100%;
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	background-color: #b4e1f6;
+	overflow: hidden;
+}
+@keyframes heartclouds {
+	0% {
+		transform: translateY(-3%);
+	}
+	50% {
+		transform: translateY(3%);
+	}
+	100% {
+		transform: translateY(-3%);
+	}
+}
+
+#clouds {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: fill;
+	min-width: 500px;
+}
+#hearts {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	object-fit: fill;
+	animation: heartclouds 25s ease-in-out infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	min-width: 500px;
+	left: -0.5vw;
+}
+
+
 html, body, #root {
   width: 100%;
   height: 100%;
+	overflow: hidden;
+	min-width: 500px;
+}
+
+@media screen and (min-width: 500px) {
+	.verse {
+		font-size: 20px;
+	}
 }
 
 .verse-container {
-  width: 70vw;
+  max-width: 55vw;
+	min-width: 600px;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .verse {
-  font-size: 25px;
+	width: 40vw;
+	max-height: 150px;
+	font-size: 25px;
 	text-align: center;
+	float: none;
+	position: absolute;
+	font-style: Futura, sans-serif;
+}
+
+#scroll {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
