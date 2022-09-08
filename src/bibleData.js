@@ -187,8 +187,8 @@ export const prayerData = [
   "Lord, Thank you for my beautiful family. Please watch over my family today. Send an angel to guide them  safely and avoid any harm they may face. Amen",
   "Father, grant Mercy to all souls that turned away from You. Open their hearts and minds with Your light. Gather Your children from the four corners of the earth. Bring them out of darkness into Your light. You are our saving God Who leads us in our salvation. Jesus, our Savior, you are the hope of all the Earth. May You be known among all nations and fill all men with Your love. Amen",
   "Lord defend us in battle. Be our protection against the wickedness and snares of the devil; May You rebuke him, we humbly pray; And do thou, O Heavenly Father, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen",
-  "Father of all, we pray to you for (name of the deceased), and for all those whom we love but see no longer. Grant to them eternal rest. Let light perpetual shine upon them. May their soul and the souls of all the faithful departed, through the mercy of God, rest in peace. Amen",
-  "Dear Jesus, Divine Physician and Healer of the sick, we turn to you in times of illness. O dearest comforter of the troubled, alleviate our worry and sorrow with your gentle love, and grant us the grace and strength to accept our burdens. Amen",
+  "Father of all, we pray to you for (name of the deceased), and for all those whom we love but see no longer. Grant to them eternal rest. Let light perpetual shine upon them. May their soul and the souls of all the faithful departed, through the mercy of God, rest in peace. Amen",
+  "Dear Jesus, Divine Physician and Healer of the sick, we turn to you in times of illness. O dearest comforter of the troubled, alleviate our worry and sorrow with your gentle love, and grant us the grace and strength to accept our burdens. Amen",
   "Jesus please, put your arms around the poor so they may feel comfort and hope; meet their needs and be their fountain of abundance. Lord, guide me so I can be your hands and feet pursuing justice in all things I do. Amen"
 ];
 
