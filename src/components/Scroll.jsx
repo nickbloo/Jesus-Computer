@@ -18,7 +18,7 @@ export default function Scroll ({ scroll, verse, prayer, deed }) {
         setScrollText(verse);
         break;
     }
-  }, [scroll]);
+  }, [scroll, verse, prayer, deed]);
 
   return (
     <div className="verse-container">

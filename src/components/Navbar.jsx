@@ -8,9 +8,9 @@ export default function Navbar ({ setScroll }) {
 
   return (
     <div id='navbar'>
-      <button name='VERSE' onClick={handleClick}>VERSE</button>
-      <button name='PRAYER' onClick={handleClick}>PRAYER</button>
-      <button name='DEED' onClick={handleClick}>DEED</button>
+      <button id="btn1" name='VERSE' onClick={handleClick}>VERSE</button>
+      <button id="btn2" name='PRAYER' onClick={handleClick}>PRAYER</button>
+      <button id="btn3" name='DEED' onClick={handleClick}>DEED</button>
     </div>
   );
 }

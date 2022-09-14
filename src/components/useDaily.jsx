@@ -3,6 +3,7 @@ import axios from 'axios';
 import { api_key } from '../../config.js';
 import { books, chapters } from '../bibleData.js';
 import { getCookie, setCookie } from "../cookieHelpers.js";
+import { prayerData, deedData } from '../bibleData.js';
 
 const config = {
   headers: {
@@ -10,28 +11,33 @@ const config = {
   }
 }
 
-function randomNum (x) {
-  return Math.floor(Math.random() * (x) + 1);
+function randomNum (max, min = 1) {
+  return Math.floor(Math.random() * (x) + min);
 }
 
-export default function useVerse () {
-  const [verse, setVerse] = useState(getCookie("verse"));
+export default function useDaily () {
+  const [verse, setVerse] = useState('');
+  const [prayer, setPrayer] = useState('');
+  const [deed, setDeed] = useState('');
   const [verseId, setVerseId] = useState(null);
-  //Get a database of bible verses
 
   useEffect(() => {
     const lastDate = getCookie("date");
     const todayDate = new Date();
     const todayString = todayDate.toLocaleDateString();
+    const oldVerse = getCookie("verse");
+    const oldPrayer = getCookie('prayer');
+    const oldDeed = getCookie('deed');
     if (lastDate !== todayString) {
       getVerseList();
+      getPrayersAndDeeds();
+    } else if (oldVerse.length > 1 && oldPrayer.length > 1 && oldDeed.length > 1) {
+      setVerse(oldVerse);
+      setPrayer(oldPrayer);
+      setDeed(oldDeed);
     } else {
-      const oldVerse = getCookie("verse");
-      if (oldVerse.length > 1) {
-        setVerse(oldVerse);
-      } else {
-        getVerseList();
-      }
+      getVerseList();
+      getPrayersAndDeeds();
     }
     setCookie("date", todayString);
   }, []);
@@ -49,7 +55,7 @@ export default function useVerse () {
   }, [verse]);
 
   function getVerseList () {
-    const num = Math.floor(Math.random() * books.length);
+    const num = randomNum(books.length, 0);
     const book = books[num];
     const chapter = randomNum(chapters[num]);
     axios.get(`https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/chapters/${book}.${chapter}/verses`, config)
@@ -74,5 +80,16 @@ export default function useVerse () {
       .catch((err) => console.error(err));
   }
 
-  return { verse };
+  function getPrayersAndDeeds () {
+    let randomPrayerNum = randomNum(prayerData.length, 0);
+    let randomDeedNum = randomNum(deedData.length, 0);
+    let newPrayer = prayerData[randomPrayerNum];
+    let newDeed = deedData[randomDeedNum];
+    setCookie('prayer', newPrayer);
+    setCookie('deed', newDeed);
+    setPrayer(newPrayer);
+    setDeed(newDeed);
+  }
+
+  return { verse, prayer, deed };
 }
