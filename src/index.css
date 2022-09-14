@@ -131,6 +131,17 @@ html, body, #root {
 	position: relative;
 	top: 10vh;
 	font-family: Cinzel;
+	overflow: hidden;
+}
+.verse-ref {
+	color: black;
+	text-decoration: none;
+	position: relative;
+	font-size: 15px;
+	font-weight: bold;
+}
+.verse-ref:hover {
+	color: red;
 }
 
 #scroll {
@@ -141,8 +152,6 @@ html, body, #root {
 }
 #navbar {
 	top: 0;
-	height: 100px;
-	/*background-color: white;*/
 	z-index: 3;
 	display: flex;
 	justify-content: space-around;
@@ -151,7 +160,10 @@ html, body, #root {
 
 button {
 	font-family: Cinzel;
-	font-size: 24px;
+	font-size: 30px;
 	background-color: #fff3c9;
+	margin: 1vw;
 }
-
+button:hover {
+	color: red;
+}
