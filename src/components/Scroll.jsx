@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import jesusscroll from "./assets/jesusscroll.png";
 
 export default function Scroll({ scroll, verse, prayer, deed, verseRef }) {
   const [scrollText, setScrollText] = useState("");
@@ -32,7 +33,7 @@ export default function Scroll({ scroll, verse, prayer, deed, verseRef }) {
 
   return (
     <div className="verse-container">
-      <img id="scroll" src="/src/assets/jesusscroll.png" />
+      <img id="scroll" src={jesusscroll} />
       <span className="verse">
         {scrollText}
         <br />
