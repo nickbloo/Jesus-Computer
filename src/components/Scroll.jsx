@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import jesusscroll from "./assets/jesusscroll.png";
+import jesusscroll from "../assets/jesusscroll.png";
 
 export default function Scroll({ scroll, verse, prayer, deed, verseRef }) {
   const [scrollText, setScrollText] = useState("");
