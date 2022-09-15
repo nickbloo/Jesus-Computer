@@ -3,167 +3,247 @@
    License: none (public domain)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&display=swap");
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font-family: Cinzel;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Cinzel;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* END OF CSS RESET */
 
-
 .App {
   width: 100%;
-	height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-	background-color: #b4e1f6;
-	overflow: hidden;
+  background-color: #b4e1f6;
+  overflow: hidden;
 }
 @keyframes heartclouds {
-	0% {
-		transform: translateY(-3%);
-	}
-	50% {
-		transform: translateY(3%);
-	}
-	100% {
-		transform: translateY(-3%);
-	}
+  0% {
+    transform: translateY(-3%);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(-3%);
+  }
 }
 
 #clouds {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	object-fit: fill;
-	min-width: 500px;
-}
-#hearts {
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	position: absolute;
-	object-fit: fill;
-	animation: heartclouds 25s ease-in-out infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	min-width: 500px;
-	left: -0.5vw;
-}
-
-
-html, body, #root {
   width: 100%;
   height: 100%;
-	overflow: hidden;
-	min-width: 500px;
+  position: absolute;
+  object-fit: fill;
+  min-width: 500px;
+}
+#hearts {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  object-fit: fill;
+  animation: heartclouds 25s ease-in-out infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  min-width: 500px;
+  left: -0.5vw;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-width: 500px;
 }
 
 @media screen and (max-width: 600px) {
-	.verse {
-		font-size: 20px;
-	}
-
+  .verse {
+    font-size: 20px;
+  }
 }
 
 .verse-container {
   max-width: 55vw;
-	min-width: 600px;
-	height: 600px;
-	z-index: 2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	top: 10vh;
+  min-width: 600px;
+  height: 600px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vh;
 }
 .verse {
-	max-width: 40vw;
-	min-width: 400px;
-	max-height: 150px;
-	font-size: 25px;
-	text-align: center;
-	float: none;
-	position: relative;
-	top: 10vh;
-	font-family: Cinzel;
-	overflow: hidden;
+  max-width: 40vw;
+  min-width: 400px;
+  max-height: 150px;
+  font-size: 25px;
+  text-align: center;
+  float: none;
+  position: relative;
+  top: 10vh;
+  font-family: Cinzel;
+  overflow: hidden;
 }
 .verse-ref {
-	color: black;
-	text-decoration: none;
-	position: relative;
-	font-size: 15px;
-	font-weight: bold;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
 }
 .verse-ref:hover {
-	color: red;
+  color: red;
 }
 
 #scroll {
-	position: absolute;
-	max-width: 55vw;
-	min-width: 600px;
-	object-fit: cover;
+  position: absolute;
+  max-width: 55vw;
+  min-width: 600px;
+  object-fit: cover;
 }
 #navbar {
-	top: 0;
-	z-index: 3;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 button {
-	font-family: Cinzel;
-	font-size: 30px;
-	background-color: #fff3c9;
-	margin: 1vw;
+  font-family: Cinzel;
+  font-size: 30px;
+  background-color: #fff3c9;
+  margin: 1vw;
 }
 button:hover {
-	color: red;
+  color: red;
 }

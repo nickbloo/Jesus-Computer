@@ -64,75 +64,13 @@ export const books = [
   "2JO",
   "3JO",
   "JUD",
-  "REV"
-]
+  "REV",
+];
 
 export const chapters = [
-  40,
-  27,
-  36,
-  34,
-  24,
-  21,
-  4,
-  31,
-  24,
-  22,
-  25,
-  26,
-  36,
-  10,
-  13,
-  10,
-  42,
-  150,
-  31,
-  12,
-  8,
-  66,
-  52,
-  5,
-  48,
-  12,
-  14,
-  3,
-  9,
-  1,
-  4,
-  7,
-  3,
-  3,
-  3,
-  2,
-  14,
-  4,
-  28,
-  16,
-  24,
-  21,
-  28,
-  16,
-  16,
-  13,
-  6,
-  6,
-  4,
-  4,
-  5,
-  3,
-  6,
-  4,
-  3,
-  1,
-  13,
-  5,
-  5,
-  3,
-  5,
-  1,
-  1,
-  1,
-  22
+  40, 27, 36, 34, 24, 21, 4, 31, 24, 22, 25, 26, 36, 10, 13, 10, 42, 150, 31,
+  12, 8, 66, 52, 5, 48, 12, 14, 3, 9, 1, 4, 7, 3, 3, 3, 2, 14, 4, 28, 16, 24,
+  21, 28, 16, 16, 13, 6, 6, 4, 4, 5, 3, 6, 4, 3, 1, 13, 5, 5, 3, 5, 1, 1, 1, 22,
 ];
 
 export const deedData = [
@@ -165,7 +103,7 @@ export const deedData = [
   "Protect your body, as a temple of the Holy Spirit",
   "Feed an animal today",
   "Dedicate yourself to peace throughout the day",
-  "Share a Bible passage with a friend"
+  "Share a Bible passage with a friend",
 ];
 
 export const prayerData = [
@@ -191,6 +129,5 @@ export const prayerData = [
   "Lord defend us in battle. Be our protection against the wickedness and snares of the devil. May You rebuke him, we humbly pray, and do thou, O Heavenly Father, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen",
   "Father of all, we pray to you for (name of the deceased), and for all those whom we love but see no longer. Grant to them eternal rest. Let light perpetual shine upon them. May their soul and the souls of all the faithful departed, through the mercy of God, rest in peace. Amen",
   "Dear Jesus, Divine Physician and Healer of the sick, we turn to you in times of illness. O dearest comforter of the troubled, alleviate our worry and sorrow with your gentle love, and grant us the grace and strength to accept our burdens. Amen",
-  "Jesus please, put your arms around the poor so they may feel comfort and hope; meet their needs and be their fountain of abundance. Lord, guide me so I can be your hands and feet pursuing justice in all things I do. Amen"
+  "Jesus please, put your arms around the poor so they may feel comfort and hope; meet their needs and be their fountain of abundance. Lord, guide me so I can be your hands and feet pursuing justice in all things I do. Amen",
 ];
-

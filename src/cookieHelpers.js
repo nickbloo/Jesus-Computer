@@ -4,20 +4,22 @@
 const setCookie = (name, value, path = "") => {
   //Sets cookie expiration date to 2 weeks after the moment of its creation
   let creationDate = new Date();
-  creationDate.setTime(creationDate.getTime() + (1000 * 60 * 60 * 24 * 14));
-  let cookieExpiration = "expires=" + creationDate .toUTCString();
+  creationDate.setTime(creationDate.getTime() + 1000 * 60 * 60 * 24 * 14);
+  let cookieExpiration = "expires=" + creationDate.toUTCString();
 
-  document.cookie = name + "=" + value + ";" + cookieExpiration + ";path=/" + path + ";";
+  document.cookie =
+    name + "=" + value + ";" + cookieExpiration + ";path=/" + path + ";";
 };
 
 const deleteCookie = (name, path = "") => {
-  document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/" + path + ";";
-}
+  document.cookie =
+    name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/" + path + ";";
+};
 
 const getAllCookies = () => {
   let cookies = document.cookie;
   return cookies;
-}
+};
 
 const getCookie = (cookieName) => {
   let name = cookieName + "=";
@@ -34,6 +36,6 @@ const getCookie = (cookieName) => {
     }
   }
   return "";
-}
+};
 
-export {setCookie, getAllCookies, deleteCookie, getCookie};
+export { setCookie, getAllCookies, deleteCookie, getCookie };
