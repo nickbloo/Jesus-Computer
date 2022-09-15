@@ -6,13 +6,13 @@ export default function Navbar({ setScroll }) {
   return (
     <div id="navbar">
       <button id="btn" name="PRAYER" onClick={handleClick}>
-        PRAYER
+        DAILY PRAYER
       </button>
       <button id="btn" name="VERSE" onClick={handleClick}>
-        VERSE
+        DAILY VERSE
       </button>
       <button id="btn" name="DEED" onClick={handleClick}>
-        DEED
+        DAILY DEED
       </button>
     </div>
   );
