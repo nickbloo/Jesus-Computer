@@ -9,9 +9,17 @@ export default function Scroll({ scroll, verse, prayer, deed, verseRef }) {
       return "https://www.kingjamesbibleonline.org/";
     }
     let refs = verseRef.split(" ");
-    let book = refs[0];
-    let chap = refs[1].split(":")[0];
-    return `https://www.kingjamesbibleonline.org/${book}-Chapter-${chap}/`;
+
+    if (isNaN(refs[0]) == true) {
+      let book = refs[0];
+      let chap = refs[1].split(":")[0];
+      return `https://www.kingjamesbibleonline.org/${book}-Chapter-${chap}/`;
+    } else {
+      let bookNum = refs[0];
+      let book = refs[1].split(" ")[0];
+      let chap = refs[2].split(":")[1];
+      return `https://www.kingjamesbibleonline.org/${bookNum}-${book}-Chapter-${chap}/`;
+    }
   }, [verseRef]);
 
   useEffect(() => {

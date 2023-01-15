@@ -211,7 +211,6 @@ body,
   position: relative;
   top: 10vh;
   font-family: Cinzel;
-  overflow: hidden;
 }
 .verse-ref {
   color: black;
@@ -246,4 +245,18 @@ button {
 }
 button:hover {
   color: red;
+}
+@media screen and (max-width: 640px) {
+  #btn {
+    font-size: 20px;
+    width: 7rem
+  }
+  #scroll {
+    max-width: 48vw;
+    min-width: 500px;
+  }
+  #clouds {
+    height: 100vh;
+    overflow: hidden;
+  }
 }

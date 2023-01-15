@@ -2,7 +2,7 @@
   "name": "bible-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nickbloo.github.io/",
+  "homepage": "https://nickbloo.github.io/Jesus-Computer",
   "type": "module",
   "scripts": {
     "dev": "vite",

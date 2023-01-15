@@ -79,6 +79,7 @@ export default function useDaily() {
     const oldVerseRef = getCookie("verseref");
     const oldPrayer = getCookie("prayer");
     const oldDeed = getCookie("deed");
+
     if (lastDate !== todayString) {
       getVerseList();
       getPrayersAndDeeds();
